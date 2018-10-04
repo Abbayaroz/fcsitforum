@@ -12,7 +12,7 @@ include("functions/function.php");
     <meta charset="utf-8" />
     <title>home | fcsit</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
 </head>
 <body>
     <header>
