@@ -1,0 +1,295 @@
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section{
+    display: block;
+}
+body{
+    background: rgb(238, 240, 241);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    border-bottom:solid 3px darkgray;
+    padding-top:108px;
+    margin-top:-0.5%;
+    background: rgb(136, 251, 238);
+    color:rgb(131, 129, 129);
+    text-transform: capitalize;
+
+}
+
+#logo{
+    position: absolute;
+    top:0;
+    background: silver;
+    margin-top:2px;
+    border-radius:10px;
+    margin-left:0.5%;
+}
+#logo img{
+    width:100%;
+    border-radius: inherit;
+    height:100px;
+    
+}
+#form{
+    float: right;
+    position:absolute;
+    right:0;
+    top:0;
+    margin-top:55px;
+    margin-right:2%;
+    width:50%;
+    
+}
+#form label{
+    color: rgb(7, 7, 7);
+}
+#form form input[type=email],#form form input[type=password]{
+    width:30%;
+    height:30px;
+    border-radius:7px;
+    border:none;
+    margin-left:1%;
+    margin-right:1%;
+    outline: none;
+    background: rgb(228, 225, 225);
+    padding-left:10px;
+}
+#form form input[type=email]:focus,#form form input[type=password]:focus{
+    background: white;
+}
+#form form input[type=submit]{
+    width:8%;
+    outline: none;
+    border:none;
+    border-radius:7px;
+    height:30px;
+}
+#form form input[type=submit]:hover{
+    background: slategray;
+    transition: all 2s ease-in-out;
+    border:1px solid coral;
+    color:white;
+    cursor:pointer;
+}
+#container1{
+    position: relative;
+    background: whitesmoke;
+    
+    
+}
+
+
+#ccontainer h2{
+    border-bottom:1px solid silver;
+    color:rgba(0, 0, 0, 0.6) ;
+    background: aliceblue;
+    text-shadow:2px 2px navy;
+}
+#ccontainer{
+    width: 50%;
+    margin-left:2%;
+    text-align:center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    margin-top:60px;
+    background-image: url(slideimage1.jpg);
+    animation-name:basheer;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-start;
+    animation-duration: 20s; 
+    background-size:cover;
+    background-repeat: no-repeat;
+ }
+ @keyframes basheer{
+     0%{
+        background-image: url(slideimage2.jpg);
+     }
+     30%{
+        background-image: url(slideimage1.jpg);
+     }
+     60%{
+        background-image: url(bash.jpg);
+     }
+     90%{
+        background-image: url(slideimage3.jpg);
+     }
+ }
+ #ccontainer img{
+     width: 50%;
+     height:600px;
+     margin-bottom: 5px;
+     visibility: hidden;
+ }
+.clr{
+    clear: both;
+}
+#ccontainer1{
+    float:right;
+    margin-top:-600px;
+    width:30%;
+    text-align: center;
+    margin-right: 10%;
+    border:3px dotted rgb(219, 216, 216);
+    line-height: 25px;
+    
+}
+#ccontainer1 h2{
+    border-bottom:1px solid black;
+    text-transform: capitalize;
+    width:70%;
+    margin-left:15%;
+}
+#ccontainer1 form label{
+    float:left;
+    margin-left:15%;
+    text-transform: capitalize;
+    color:rgb(131, 129, 129);
+}
+#ccontainer1 form input[type=text], #ccontainer1 input[type=email], #ccontainer1 input[type=email]{
+    height:25px;
+    width:70%;
+    padding-left:10px;
+    border-radius:5px;
+    border:0px;
+    text-transform: capitalize;
+    outline: none;
+}
+#ccontainer1 form input[type=text]:focus, #ccontainer1 input[type=email]:focus, #ccontainer1 input[type=date]:focus{
+    border:2px solid aqua;
+    transition: all 1s ease-in-out;
+    height:26px;
+}
+#ccontainer1 form input[type=password]{
+    height:25px;
+    width:35%;
+    padding-left:10px;
+    border-radius:5px;
+    border:0px;
+    text-transform: capitalize;
+    outline: none;
+}
+#ccontainer1 form input[type=submit]{
+    width:72%;
+    height:30px;
+    padding-left:8px;
+    border-radius:5px;
+    border:0px;
+    text-transform: capitalize;
+    margin-top:15px;
+    margin-bottom:30px;
+    outline: none;
+}
+#ccontainer1 form input[type=submit]:hover{
+    background: slategray;
+    transition: all 2s ease-in-out;
+    border:1px solid coral;
+    color:white;
+    cursor:pointer;
+}
+select{
+    width:72%;
+    height:27px;
+    padding-left:8px;
+    border-radius:5px;
+    border:0px;
+    text-transform: capitalize;
+    
+}
+
+select option{
+    width:inherit;
+    background: lightsteelblue;
+    color:black;
+    
+    
+}
+footer{
+    border-top:1px black solid;
+    margin-top:1%;
+
+}
+#footer{
+    width: 100%;
+	height: 60px;
+	background-color: rgb(12, 248, 248);
+	clear: both;
+}
+footer a{
+    text-decoration: none;
+    color: green;
+    
+}
+footer h3{
+    float:right;
+    margin-right:2%;
+    color: green;
+    font-style: italic;
+    margin-top:3px;
+}
+/* device responsiveness */
+@media screen and (max-width:480px) {
+   #container1{
+       display:grid;
+       grid-template-columns:1fr;
+       grid-template-rows: 1fr 1fr;
+   }
+   #ccontainer{
+       width:100%;
+   }
+   #ccontainer1{
+    width:100%;
+    color:black;
+}
+header{
+    display: block;
+
+}
+
+#logo{
+    position: relative;
+    width:100%;
+    background : silver;
+    margin-top:-70px;
+    border-radius:10px;
+    margin-left:0.5%;
+}
+#logo img{
+    width:100%;
+    border-radius: inherit;
+    height:100px;
+    
+}
+#form{
+    float: none;
+    display: grid;
+    grid-auto-columns: 1fr;
+    position:relative;
+    width:100%;
+    margin-top:55px;
+    width:100%;
+    
+}
+#form form label{
+    margin-left:20%;
+}
+#form form input[type=email],#form form input[type=password]{
+    width:65%;
+    height:23px;
+    border-radius:7px;
+    border:none;
+    margin-left:1%;
+    margin-right:1%;
+    outline: none;
+    background: rgb(228, 225, 225);
+    padding-left:10px;
+}
+#form form input[type=submit]{
+    width:10%;
+    outline: none;
+    border:none;
+    border-radius:7px;
+    height:23px;
+}
+  }
+
